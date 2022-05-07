@@ -652,7 +652,7 @@ class PendingRequest
      * Issue a POST request to the given URL.
      *
      * @param  string  $url
-     * @param  array  $data
+     * @param  array|object|null  $data
      * @return \Illuminate\Http\Client\Response
      */
     public function post(string $url, $data = [])
@@ -666,7 +666,7 @@ class PendingRequest
      * Issue a PATCH request to the given URL.
      *
      * @param  string  $url
-     * @param  array  $data
+     * @param  array|object|null  $data
      * @return \Illuminate\Http\Client\Response
      */
     public function patch($url, $data = [])
@@ -680,7 +680,7 @@ class PendingRequest
      * Issue a PUT request to the given URL.
      *
      * @param  string  $url
-     * @param  array  $data
+     * @param  array|object|null  $data
      * @return \Illuminate\Http\Client\Response
      */
     public function put($url, $data = [])
@@ -694,7 +694,7 @@ class PendingRequest
      * Issue a DELETE request to the given URL.
      *
      * @param  string  $url
-     * @param  array  $data
+     * @param  array|object|null  $data
      * @return \Illuminate\Http\Client\Response
      */
     public function delete($url, $data = [])
